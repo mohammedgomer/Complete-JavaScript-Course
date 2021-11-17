@@ -119,6 +119,7 @@ console.log(lastName);
 */
 
 /////////////////////// Basic Operators ///////////////////////
+
 /*
 // Operators basically allows us to transform values or combine multiple values and do all types of work with values
 // There are many types of operators: mathematical operators, comparison operators & assignment operators
@@ -165,38 +166,174 @@ console.log(now - 1991 > now - 2018); // This is the same as ageJonas > ageSarah
 
 /////////////////////// Operator Precedence ///////////////////////
 
-
+/*
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2020;
 
 // Why are the two subtraction expressions executed before the ">" operator?
-// Meaning why did JS not execute this expression as 46 > now 
+// Meaning why did JS not execute this expression as 46 > now
 
-// Both calculations are done before the comparison 
+// Both calculations are done before the comparison
 // Usually all the math operators are executed before the comparison operators
-// This explains why the example below works 
+// This explains why the example below works
 console.log(now - 1991 > now - 2018);
 
-// We can define two variables at the same time 
+// We can define two variables at the same time
 let x, y;
-// Subtraction has higher precedence than equals, 
+// Subtraction has higher precedence than equals,
 // that's why subtraction will get executed first
 x = y = 25 - 10 - 5; // x = y = 10
 console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+*/
+
+/////////////////////// CODING CHALLENGE #1 ///////////////////////
+
+/*
+const marksMass = 78;
+const marksHeight = 1.69;
+
+const johnsMass = 92;
+const johnsHeight = 1.95;
+
+const marksBMI = marksMass / marksHeight ** 2
+const johnsBMI = johnsMass / (johnsHeight * johnsHeight);
+
+const marksHigherBMI = (marksBMI > johnsBMI);
+
+console.log(marksBMI, johnsBMI, marksHigherBMI);
+*/
 
 
+/////////////////////// String & Template Literals ///////////////////////
 
+/*
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
 
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(jonas);
 
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`
+console.log(jonasNew);
 
+// Multi-line String
+console.log('String with \n\
+multiple \n\
+lines');
 
+// Easier way with template strings
+console.log(`String
+multiple
+lines`);
+*/
 
+/////////////////////// Taking Decisions: if / else Statements
+//////////////
 
+/*
+const age = 15;
 
+if (age >= 18) {
+  // Whenever the isOldEnough value is true,
+  // the code in this block will then be executed
+  // if its false, then its not going to be executed
+  console.log('Sarah can start learning to drive 🚘');
+} else {
+  // The else block will be executed if the condition is false
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`)
+}
+
+const birthYear = 1991;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
+
+/////////////////////// Challenge #2 ///////////////////////
+
+/*
+const marksMass = 78;
+const marksHeight = 1.69;
+
+const johnsMass = 92;
+const johnsHeight = 1.95;
+
+const marksBMI = marksMass / marksHeight ** 2
+const johnsBMI = johnsMass / (johnsHeight * johnsHeight);
+
+if (marksBMI > johnsBMI) {
+  console.log(`Mark's BMI (${marksBMI}) is higher than John's BMI (${johnsBMI})`);
+}
+else {
+  console.log(`Johns's BMI (${johnsBMI}) is higher than Marks's BMI (${marksBMI})`);
+}
+*/
+
+/////////////////////// Type Conversion and Coercion ///////////////////////
+
+/*
+Types are one of the fundamentals aspects in programming
+Converting between types is something we do in every programming language
+I.e - String to a number, a number into a boolean 
+*/
+/*
+// Type conversion - when we manually convert from one type to another, explicitly
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear); // First one is a number, second one is a string
+// The original value of inputYear is still a string, using the number function simply gives to us a converted version
+console.log(Number(inputYear) + 18); // This will concatenate the value and not actually become an expression
+
+console.log(Number('Jonas')); // Will return NaN - NaN means an invalid number 
+
+// We can do the same when converting numbers into strings
+console.log(String(23), 23);
+
+// Type coercion - when JS converts types behind the scenes for us, implicitly
+// The plus operator here triggers a coercion to strings
+console.log('I am ' + 23 + ' years old');
+// JS converted the strings to numbers, if we used a plus it would convert to strings - 23103
+console.log('23' - '10' - 3);
+console.log('23' * '2'); // This will output 46 and not 232, JS will convert the strings to numbers
+
+let n = '1' + 1; // '11'
+n = n - 1; // 10
+console.log(n); // 10
+*/
+
+/////////////////////// Truthy and Falsy Values ///////////////////////
+
+/* Falsy values - Values that are not exactly false but will become 
+false when we try convert them into boolean. 
+In JS there are only 5 falsy values:
+0, '', undefined, NaN & ofc false itself is already false.
+*/
+
+// Converting values to boolean 
+// The conversion to boolean is always implicit, not explicit
+// Type coercion that JS does behind the scenes
+console.log(Boolean(0)); // Falsy value
+console.log(Boolean(undefined)); // Falsy value
+console.log(Boolean('Jonas')); // Any string that is not an empty string is a truthy value
+console.log(Boolean({})); // Truthy value
+console.log(Boolean('')); // Falsy value
+
+const money = 0;
+if (money) {
+  console.log(`Don't spend it all`);
+} else {
+  console.log('You should get a job!');
+}
 
 
 
