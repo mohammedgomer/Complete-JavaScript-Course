@@ -319,6 +319,7 @@ In JS there are only 5 falsy values:
 0, '', undefined, NaN & ofc false itself is already false.
 */
 
+/*
 // Converting values to boolean 
 // The conversion to boolean is always implicit, not explicit
 // Type coercion that JS does behind the scenes
@@ -334,6 +335,65 @@ if (money) {
 } else {
   console.log('You should get a job!');
 }
+
+// Height is undefined
+let height;
+if (height) {
+  console.log('YAY! Height is defined');
+}
+// This block will get executed as height is undefined & undefined is a falsy value
+else {
+  console.log('Height is UNDEFINED');
+}
+*/
+
+/////////////////////// Equality Operators: == vs. === ///////////////////////
+
+// If we want to check if two values are equal we use equality operators
+
+const age = 18;
+
+// Checking if the age is exactly 18 
+// Just like the comparison operators this operator will return true or false. True will be if both sides are exactly the same 
+if (age === 18) console.log('You just became an adult :D (strict)');
+
+if (age == 18) console.log('You just became an adult :D (loose)');
+
+// Strict Equality Operator - ===
+// Called Strict Equality Operator because it does not perform type coercion. Only returns true when both values are exactly the same. 
+
+// Loose Equality Operator - == 
+// This actually does type coercion
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+// // Will get a log, as 23 string will get converted to a number
+// if (favourite == 23) {
+//   console.log('Cool! 23 is an amazing number!');
+// }
+
+// Will not get a log 
+if (favourite === 23) {
+  console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+  console.log('7 is also a cool number');
+}
+else if (favourite === 9) {
+  console.log('9 is also a cool number');
+}
+else {
+  console.log('Number is not 23 or 7');
+}
+
+if (favourite !== 23) console.log('Why not 23?');
+
+
+
+
+
+
 
 
 
