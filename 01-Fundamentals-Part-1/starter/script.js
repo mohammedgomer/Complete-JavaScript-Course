@@ -432,6 +432,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 
 /////////////////////// Coding Challenge #3 ///////////////////////
 
+/*
 const dolphinsAvg = (97 + 112 + 101) / 3;
 const koalasAvg = (109 + 95 + 123) / 3;
 console.log(dolphinsAvg, koalasAvg)
@@ -448,6 +449,60 @@ else if (koalasAvg > dolphinsAvg && koalasAvg >= 100) {
 else {
   console.log('NO TEAM WINS THE TROPHY 🏆!')
 }
+*/
+
+/////////////////////// The Switch Statement ///////////////////////
+
+// A switch statement is an alternative way of writing a complicated else if statement
+// It is used when all we want to do is compare one value to multiple different options
+
+const day = 'Monday';
+
+// Switch Statement
+switch (day) {
+  case 'Monday': // day === 'Monday' <- If this is true, the code below will be executed
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+  case 'Tuesday':
+    console.log('Prepare theory videos');
+    break;
+  // Running the same code for two different values 
+  case 'Wednesday':
+  case 'Thursday':
+    console.log('Write code examples');
+    break;
+  case 'Friday':
+    console.log('Record videos');
+    break;
+  case 'Saturday':
+  case 'Sunday':
+    console.log('Enjoy the weekend :D');
+    break;
+  default:
+    console.log('Not a valid day');
+}
+
+// If Statement
+if (day === 'Monday') {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if (day === 'Tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'Wednesday' || day === 'Thursday') {
+  console.log('Write code examples');
+} else if (day === 'Friday') {
+  console.log('Record videos');
+} else if (day === 'Saturday' || day === 'Sunday') {
+  console.log('Enjoy the weekend :D');
+} else {
+  console.log('Not a valid day');
+}
+
+
+
+
+
 
 
 
