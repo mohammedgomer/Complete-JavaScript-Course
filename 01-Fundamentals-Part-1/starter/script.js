@@ -396,28 +396,29 @@ if (favourite !== 23) console.log('Why not 23?');
 /*
 // Boolean logic is a branch of computer science which uses true and false values to solve complex logical problems, in roder to do that it uses several logical operators to combine true or false values.
 
-// AND, OR & NOT Operators 
+// AND, OR & NOT Operators
 // AND - return true ONLY if A AND B are true
-// OR - Will be true if JUST ONE of the variables (A OR B) is true 
-// NOT - Inverts true/false value, if A is false it will become true, if A is true it will become false 
+// OR - Will be true if JUST ONE of the variables (A OR B) is true
+// NOT - Inverts true/false value, if A is false it will become true, if A is true it will become false
 */
 
 /////////////////////// Logical Operators ///////////////////////
 
+/*
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
 
-// console.log(hasDriversLicense && hasGoodVision);
-// console.log(hasDriversLicense || hasGoodVision);
-// console.log(!hasDriversLicense);
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
 
 
 
-// if (hasDriversLicense && hasGoodVision) {
-//   console.log('Sarah is able to drive!');
-// } else {
-//   console.log('Someone else should drive...');
-// }
+if (hasDriversLicense && hasGoodVision) {
+  console.log('Sarah is able to drive!');
+} else {
+  console.log('Someone else should drive...');
+}
 
 const isTired = false; // C
 console.log(hasDriversLicense && hasGoodVision && isTired);
@@ -426,6 +427,26 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
   console.log('Sarah is able to drive!');
 } else {
   console.log('Someone else should drive...');
+}
+*/
+
+/////////////////////// Coding Challenge #3 ///////////////////////
+
+const dolphinsAvg = (97 + 112 + 101) / 3;
+const koalasAvg = (109 + 95 + 123) / 3;
+console.log(dolphinsAvg, koalasAvg)
+
+if (dolphinsAvg === koalasAvg && dolphinsAvg >= 100 & koalasAvg >= 100) {
+  console.log('DRAW!')
+}
+else if (dolphinsAvg > koalasAvg && dolphinsAvg >= 100) {
+  console.log('DOLPHINS WIN! 🏆')
+}
+else if (koalasAvg > dolphinsAvg && koalasAvg >= 100) {
+  console.log('KOALAS WIN! 🏆');
+}
+else {
+  console.log('NO TEAM WINS THE TROPHY 🏆!')
 }
 
 
