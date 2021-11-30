@@ -455,7 +455,7 @@ else {
 
 // A switch statement is an alternative way of writing a complicated else if statement
 // It is used when all we want to do is compare one value to multiple different options
-
+/*
 const day = 'Monday';
 
 // Switch Statement
@@ -467,7 +467,7 @@ switch (day) {
   case 'Tuesday':
     console.log('Prepare theory videos');
     break;
-  // Running the same code for two different values 
+  // Running the same code for two different values
   case 'Wednesday':
   case 'Thursday':
     console.log('Write code examples');
@@ -498,6 +498,29 @@ if (day === 'Monday') {
 } else {
   console.log('Not a valid day');
 }
+*/
+
+/////////////////////// Statements & Expressions ///////////////////////
+
+// 3 + 4 <- An expression because it produces a value 
+// 1991 <- An expression because it also produces a value in JS 
+// true && false && !false <- An expression because it will produce a boolean value 
+
+// A statement is a bigger piece of code that is executed, which does not produce a value on itself
+// Statements are like full sentences that translate our actions - the actions we want the program to perform
+
+// This statment does not produce a value, all it does is declares this variable called str
+/*
+if (23 > 10) {
+  const str = '23 is bigger'; // <- This string is itself is an expression
+  // The const str = '23 is bigger'; is a statement, although the '23 is bigger' is an expression as it produces a value
+  // When something ends in a semi-colon, that means its a statement, it's like a complete sentence.
+}
+*/
+
+/////////////////////// The Conditional(Ternary) Operator ///////////////////////
+
+
 
 
 
