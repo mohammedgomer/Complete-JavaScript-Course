@@ -285,7 +285,7 @@ else {
 /*
 Types are one of the fundamentals aspects in programming
 Converting between types is something we do in every programming language
-I.e - String to a number, a number into a boolean 
+I.e - String to a number, a number into a boolean
 */
 /*
 // Type conversion - when we manually convert from one type to another, explicitly
@@ -294,7 +294,7 @@ console.log(Number(inputYear), inputYear); // First one is a number, second one 
 // The original value of inputYear is still a string, using the number function simply gives to us a converted version
 console.log(Number(inputYear) + 18); // This will concatenate the value and not actually become an expression
 
-console.log(Number('Jonas')); // Will return NaN - NaN means an invalid number 
+console.log(Number('Jonas')); // Will return NaN - NaN means an invalid number
 
 // We can do the same when converting numbers into strings
 console.log(String(23), 23);
@@ -313,14 +313,14 @@ console.log(n); // 10
 
 /////////////////////// Truthy and Falsy Values ///////////////////////
 
-/* Falsy values - Values that are not exactly false but will become 
-false when we try convert them into boolean. 
+/* Falsy values - Values that are not exactly false but will become
+false when we try convert them into boolean.
 In JS there are only 5 falsy values:
 0, '', undefined, NaN & ofc false itself is already false.
 */
 
 /*
-// Converting values to boolean 
+// Converting values to boolean
 // The conversion to boolean is always implicit, not explicit
 // Type coercion that JS does behind the scenes
 console.log(Boolean(0)); // Falsy value
@@ -349,20 +349,21 @@ else {
 
 /////////////////////// Equality Operators: == vs. === ///////////////////////
 
+/*
 // If we want to check if two values are equal we use equality operators
 
 const age = 18;
 
-// Checking if the age is exactly 18 
-// Just like the comparison operators this operator will return true or false. True will be if both sides are exactly the same 
+// Checking if the age is exactly 18
+// Just like the comparison operators this operator will return true or false. True will be if both sides are exactly the same
 if (age === 18) console.log('You just became an adult :D (strict)');
 
 if (age == 18) console.log('You just became an adult :D (loose)');
 
 // Strict Equality Operator - ===
-// Called Strict Equality Operator because it does not perform type coercion. Only returns true when both values are exactly the same. 
+// Called Strict Equality Operator because it does not perform type coercion. Only returns true when both values are exactly the same.
 
-// Loose Equality Operator - == 
+// Loose Equality Operator - ==
 // This actually does type coercion
 
 const favourite = Number(prompt("What's your favourite number?"));
@@ -374,7 +375,7 @@ console.log(typeof favourite);
 //   console.log('Cool! 23 is an amazing number!');
 // }
 
-// Will not get a log 
+// Will not get a log
 if (favourite === 23) {
   console.log('Cool! 23 is an amazing number!');
 } else if (favourite === 7) {
@@ -388,6 +389,28 @@ else {
 }
 
 if (favourite !== 23) console.log('Why not 23?');
+*/
+
+/////////////////////// Boolean Logic ///////////////////////
+
+/*
+// Boolean logic is a branch of computer science which uses true and false values to solve complex logical problems, in roder to do that it uses several logical operators to combine true or false values.
+
+// AND, OR & NOT Operators 
+// AND - return true ONLY if A AND B are true
+// OR - Will be true if JUST ONE of the variables (A OR B) is true 
+// NOT - Inverts true/false value, if A is false it will become true, if A is true it will become false 
+*/
+
+/////////////////////// Logical Operators ///////////////////////
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true;
+
+
+
+
+
 
 
 
