@@ -518,7 +518,21 @@ if (23 > 10) {
 }
 */
 
-/////////////////////// The Conditional(Ternary) Operator ///////////////////////
+/////////////////////// The Conditional (Ternary) Operator ///////////////////////
+
+// Another way of writing conditionals - Already seen two, if and switch
+// Allows us to write something similar to an if else statement but all in one line 
+
+const age = 23;
+// If condition is true the first console.log will get printed 
+// Else the second console.log will get executed 
+age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+
+age >= 18 ? 'wine 🍷' : 'water 💧';
+
+
+
+
 
 
 
