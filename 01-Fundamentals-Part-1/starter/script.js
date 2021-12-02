@@ -89,7 +89,18 @@ console.log(typeof null);
 
 // Assignment - Data Types //
 
+let isIsland = true;
+let language;
+let country = 'United Kingdom';
+let population = 747636026;
+console.log(typeof isIsland, typeof population, typeof country, typeof language);
+
+
 */
+
+
+
+
 
 /////////////////////// let, const & var - three ways to declare variables in JS ///////////////////////
 
@@ -325,7 +336,7 @@ let n = '1' + 1; // '11'
 n = n - 1; // 10
 console.log(n); // 10
 
-// Assignment - Type Conversion and Coercion // 
+// Assignment - Type Conversion and Coercion //
 */
 
 /////////////////////// Truthy and Falsy Values ///////////////////////
@@ -525,7 +536,7 @@ if (day === 'Monday') {
   console.log('Not a valid day');
 }
 
-// Assignment - The switch Statement // 
+// Assignment - The switch Statement //
 
 
 */
@@ -552,13 +563,14 @@ if (23 > 10) {
 
 // Another way of writing conditionals - Already seen two, if and switch
 // Allows us to write something similar to an if else statement but all in one line 
-
+/*
 const age = 23;
-// If condition is true the first console.log will get printed 
-// Else the second console.log will get executed 
+// If condition is true the first console.log will get printed
+// Else the second console.log will get executed
 age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
 
 age >= 18 ? 'wine 🍷' : 'water 💧';
+*/
 
 // Assignment - The Conditional (Ternary) Operator // 
 
