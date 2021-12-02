@@ -260,7 +260,19 @@ lines`);
 
 // Assignment - Strings & Template Literals //
 
+let country = 'United Kingdom';
+let continent = 'Europe';
+let population = 747636026;
+let language = 'English';
+
+const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+
+console.log(description);
+
+
 */
+
+
 
 /////////////////////// Taking Decisions: if / else Statements
 //////////////
