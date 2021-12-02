@@ -33,7 +33,7 @@ let job2 = 'Teacher';
 
 console.log(myFirstJob);
 
-// Assignment //
+// Assignment - Values & Variable //
 let country = 'United Kingdom';
 let continent = 'Europe';
 let population = 747636026;
@@ -86,6 +86,9 @@ console.log(typeof year);
 
 // Null is another data type and it also similar to undefined
 console.log(typeof null);
+
+// Assignment - Data Types //
+
 */
 
 /////////////////////// let, const & var - three ways to declare variables in JS ///////////////////////
@@ -116,6 +119,10 @@ job = 'teacher';
 // Terrible idea, always properly declare variables!
 lastName = 'Omer';
 console.log(lastName);
+
+// Assignment - let, const & var //
+
+
 */
 
 /////////////////////// Basic Operators ///////////////////////
@@ -162,6 +169,9 @@ console.log(ageSarah >= 18); // Checking to see if Sarah is of age
 const isFullAge = age >= 18; // This variable will hold the boolean value
 
 console.log(now - 1991 > now - 2018); // This is the same as ageJonas > ageSarah
+
+// Assignment - Basic Operators //
+
 */
 
 /////////////////////// Operator Precedence ///////////////////////
@@ -231,6 +241,9 @@ lines');
 console.log(`String
 multiple
 lines`);
+
+// Assignment - Strings & Template Literals //
+
 */
 
 /////////////////////// Taking Decisions: if / else Statements
@@ -258,6 +271,8 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
+
+// Assignment - Taking Decisions: if / else Statements //
 */
 
 /////////////////////// Challenge #2 ///////////////////////
@@ -309,6 +324,8 @@ console.log('23' * '2'); // This will output 46 and not 232, JS will convert the
 let n = '1' + 1; // '11'
 n = n - 1; // 10
 console.log(n); // 10
+
+// Assignment - Type Conversion and Coercion // 
 */
 
 /////////////////////// Truthy and Falsy Values ///////////////////////
@@ -345,6 +362,9 @@ if (height) {
 else {
   console.log('Height is UNDEFINED');
 }
+
+
+
 */
 
 /////////////////////// Equality Operators: == vs. === ///////////////////////
@@ -389,6 +409,10 @@ else {
 }
 
 if (favourite !== 23) console.log('Why not 23?');
+
+// Assignment - Equality Operators: == vs. === //
+
+
 */
 
 /////////////////////// Boolean Logic ///////////////////////
@@ -428,6 +452,8 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
   console.log('Someone else should drive...');
 }
+
+// Assignment - Logical Operators //
 */
 
 /////////////////////// Coding Challenge #3 ///////////////////////
@@ -498,6 +524,10 @@ if (day === 'Monday') {
 } else {
   console.log('Not a valid day');
 }
+
+// Assignment - The switch Statement // 
+
+
 */
 
 /////////////////////// Statements & Expressions ///////////////////////
@@ -529,6 +559,10 @@ const age = 23;
 age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
 
 age >= 18 ? 'wine 🍷' : 'water 💧';
+
+// Assignment - The Conditional (Ternary) Operator // 
+
+
 
 
 
