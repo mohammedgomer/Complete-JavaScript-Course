@@ -94,8 +94,6 @@ let language;
 let country = 'United Kingdom';
 let population = 747636026;
 console.log(typeof isIsland, typeof population, typeof country, typeof language);
-
-
 */
 
 
@@ -130,10 +128,6 @@ job = 'teacher';
 // Terrible idea, always properly declare variables!
 lastName = 'Omer';
 console.log(lastName);
-
-// Assignment - let, const & var //
-
-
 */
 
 /////////////////////// Basic Operators ///////////////////////
@@ -182,8 +176,19 @@ const isFullAge = age >= 18; // This variable will hold the boolean value
 console.log(now - 1991 > now - 2018); // This is the same as ageJonas > ageSarah
 
 // Assignment - Basic Operators //
+let country = 'United Kingdom';
+let continent = 'Europe';
+let population = 747636026;
+let language = 'English';
+
+const description = country + ' is in ' + continent + ', and its ' + population + ' million' + ' people speak ' + language;
+
+console.log(population / 2, population++, (population > 6000000), (population < 33000000), description);
+
 
 */
+
+
 
 /////////////////////// Operator Precedence ///////////////////////
 
