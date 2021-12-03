@@ -301,7 +301,18 @@ if (birthYear <= 2000) {
 console.log(century);
 
 // Assignment - Taking Decisions: if / else Statements //
+let country = 'United Kingdom';
+let population = 747636026;
+
+if (population > 33000000) {
+  console.log(`${country}'s population is above average.`);
+} else {
+  console.log(`${country}'s population is ${33000000 - population} below average.`);
+
+}
+
 */
+
 
 /////////////////////// Challenge #2 ///////////////////////
 
@@ -590,6 +601,8 @@ age >= 18 ? 'wine 🍷' : 'water 💧';
 */
 
 // Assignment - The Conditional (Ternary) Operator // 
+
+
 
 
 
