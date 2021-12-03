@@ -365,6 +365,12 @@ n = n - 1; // 10
 console.log(n); // 10
 
 // Assignment - Type Conversion and Coercion //
+
+// 1. 4
+// 2. 617
+// 3. 23
+// 4. false
+// 5. 1143
 */
 
 /////////////////////// Truthy and Falsy Values ///////////////////////
