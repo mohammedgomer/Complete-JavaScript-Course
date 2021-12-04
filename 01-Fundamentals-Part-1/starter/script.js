@@ -466,9 +466,6 @@ if (numNeighbours === 1) {
 } else {
   console.log('No borders');
 }
-
-
-
 */
 
 
@@ -514,7 +511,20 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 }
 
 // Assignment - Logical Operators //
+let country = 'United Kingdom';
+let population = 747636026;
+let language = 'English';
+let isIsland = true;
+
+if (language === 'English' && population < 50000000 && !isIsland) {
+  console.log(`You should live in the ${country} :)`);
+} else {
+  console.log(`The ${country} does not meet your criteria :(`)
+}
 */
+
+
+
 
 /////////////////////// Coding Challenge #3 ///////////////////////
 
