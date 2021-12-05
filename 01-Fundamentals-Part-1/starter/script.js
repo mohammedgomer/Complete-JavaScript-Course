@@ -644,14 +644,38 @@ if (23 > 10) {
 
 // Another way of writing conditionals - Already seen two, if and switch
 // Allows us to write something similar to an if else statement but all in one line 
-/*
+
 const age = 23;
 // If condition is true the first console.log will get printed
 // Else the second console.log will get executed
-age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+// Three parts - The condition, the if part, then the else part
+// age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
 
-age >= 18 ? 'wine 🍷' : 'water 💧';
-*/
+// More efficient way of doing things 
+// Ternary operator is an expression which produces a value, 
+// Meaning that we can store the produced value in a variable 
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(drink);
+
+// Difference between the ternary operator and an if statement
+// As you can see the ternary operator is much easier to understand// & shorter/efficient
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine 🍷';
+} else {
+  drink2 = 'water 💧';
+}
+console.log(drink2);
+
+// We can embed our ternary operators into our template literals as they are essentially expressions (we couldn't do this with if statements)
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
+
+// Ternary operators are not a replacemenet for if else statements 
+// When we have bigger blocks of code the ternary operator isn't going to work - we use if else stsamenets 
+// Ternary operators are best used for quick decisions
+
+
+/////////////////////// Coding Challenge #4 ///////////////////////
 
 // Assignment - The Conditional (Ternary) Operator // 
 
