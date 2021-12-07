@@ -682,13 +682,18 @@ const bill = 430;
 
 const tip = bill >= 50 && bill <= 300 ? console.log(`Bill value: ${bill}, Tip: ${0.15 * bill}, Total Value: ${bill += 0.15 * bill}`) : console.log(`Bill value: ${bill}, Tip: ${0.20 * bill}, Total Value: ${bill += 0.20 * bill}`);
 
-*/
-
-
-
-// Assignment - The Conditional (Ternary) Operator // 
+// Assignment - The Conditional (Ternary) Operator //
 
 let country = 'United Kingdom';
 let population = 747636026;
 
 population > 33000000 ? console.log(`${country}'s population is above average`) : console.log(`${country}'s population is below average`);
+
+*/
+
+/////////////////////// JavaScript Releases: ES5, ES6+ and ESNext ///////////////////////
+
+
+
+
+
